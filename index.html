@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
 </head>
+
 <body>
-    
+    <form action="https://formspree.io/reginaf@interia.pl" method="POST">
+        <label for="imie">Imię:</label><br />
+        <input type="text" name="imie" id="imie"><br/>
+        <label for="nazwisko"> Nazwisko:</label><br/>
+        <input type="text" name="nazwisko" id="nazwisko"><br />
+        <label for="email">Podaj email:</label><br/>
+        <input type="email" name="email" id="email"><br/>
+        <label for="tel">Podaj telefon:</label><br/>
+        <input type="tel" name="tel" id="tel"> <br/>
+        <label for="select">Miasto</label>
+        <select name="lista" id="select">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="katowice">Katowice</option>
+ </select><br/>
+        <label for="gender1"><input type="radio" name="gender" id="gender1">kobieta</label>
+        <label for="gender2"><input type="radio" name="gender" id="gender2">mężczyzna</label><br/>
+        <label for="comment">Wiadomość:</label><br/>
+        <textarea id="comment" name="comment" cols="30" rows="10" ></textarea><br/>
+        <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą z dnia 29.08.1997 r. o ochronie danych osobowych (Dz.U. z 2002 r. Nr 101, poz. 926 z późn.zm.)</label> <br/>
+        <input type="submit" value="Wyślij"> <br/>
+    </form>
 </body>
+
 </html>
